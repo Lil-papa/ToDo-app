@@ -9,7 +9,7 @@ type Task = {
 
 function App() {
   const [tasks, setTasks] = React.useState<Task[]>([
-    { id: 1, title: 'Тестовое задание', isCompleted: false },
+    { id: 1, title: 'Water the flowers', isCompleted: false },
   ]);
 
   const [taskName, setTaskName] = React.useState('');
@@ -32,7 +32,7 @@ function App() {
         onChange={(e) => setTaskName(e.target.value)}
         id="task-input"
       />
-      <button onClick={onAddTask}>Add Task</button>
+      <button onClick={onAddTask}>Add New Task</button>
       <ul>
         {tasks.map((task) => (
           <li key={task.id}>{task.title}</li>

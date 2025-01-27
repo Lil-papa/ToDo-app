@@ -6,11 +6,13 @@ import tseslint from 'typescript-eslint';
 import eslintConfigPrettier from 'eslint-config-prettier';
 
 export default tseslint.config(
-  { ignores: ['dist'] },
+  { ignores: ['dist', 'eslint.config.js'] },
   {
     extends: [
       js.configs.recommended,
       ...tseslint.configs.recommended,
+      'plugin:jest-dom/recommended',
+      'plugin:testing-library/react',
       eslintConfigPrettier,
     ],
     files: ['**/*.{ts,tsx}'],
