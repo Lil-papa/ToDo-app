@@ -2,6 +2,9 @@ import './Index.css';
 import React from 'react';
 import { Task } from './types';
 import AddTask from './AddTask';
+import TaskList from './TaskList';
+import TaskListItem from './TaskListItem';
+import TaskListHeader from './TaskListHeader';
 
 function App() {
   // console.log('app rendered');
@@ -18,11 +21,11 @@ function App() {
     <div>
       <h1>Tasks</h1>
       <AddTask onAddTask={onAddTask} />
-      <ul>
+      <TaskList header={<TaskListHeader count={tasks.length} />}>
         {tasks.map((task) => (
-          <li key={task.id}>{task.title}</li>
+          <TaskListItem key={task.id}>{task.title}</TaskListItem>
         ))}
-      </ul>
+      </TaskList>
     </div>
   );
 }

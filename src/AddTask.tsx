@@ -4,7 +4,7 @@ type addTaskProps = {
   onAddTask: (taskName: string) => void;
 };
 
-export default function AddTask({ onAddTask }: addTaskProps) {
+function AddTask({ onAddTask }: addTaskProps) {
   const [taskName, setTaskName] = React.useState('');
 
   const handleAddTask = (e: React.FormEvent<HTMLFormElement>) => {
@@ -30,3 +30,5 @@ export default function AddTask({ onAddTask }: addTaskProps) {
     </form>
   );
 }
+
+export default AddTask;
