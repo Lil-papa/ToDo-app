@@ -1,4 +1,5 @@
 import './Index.css';
+import './App.css';
 import React from 'react';
 import { Task } from './types';
 import AddTask from './AddTask';
@@ -18,8 +19,8 @@ function App() {
   };
 
   return (
-    <div>
-      <h1>Tasks</h1>
+    <div className="App">
+      <h1 className="header">Tasks</h1>
       <AddTask onAddTask={onAddTask} />
       <TaskList header={<TaskListHeader count={tasks.length} />}>
         {tasks.map((task) => (

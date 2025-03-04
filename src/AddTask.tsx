@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css';
 
 type addTaskProps = {
   onAddTask: (taskName: string) => void;
@@ -19,14 +20,15 @@ function AddTask({ onAddTask }: addTaskProps) {
 
   return (
     <form onSubmit={handleAddTask}>
-      <label htmlFor="task-input">Add Task:</label>
+      {/* <label  htmlFor="task-input">Add Task: </label> */}
       <input
+        className="input"
         value={taskName}
         onChange={(e) => setTaskName(e.target.value)}
         id="task-input"
         placeholder="What do you want to do?"
       />
-      <button>Add</button>
+      <button className="btn">Add</button>
     </form>
   );
 }

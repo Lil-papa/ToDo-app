@@ -3,7 +3,7 @@ type TaskListHeaderProps = {
 };
 
 function TaskListHeader({ count }: TaskListHeaderProps) {
-  return <h2>Total Tasks: ({count})</h2>;
+  return <h2 className="count">Total Tasks: ({count})</h2>;
 }
 
 export default TaskListHeader;
