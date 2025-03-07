@@ -47,3 +47,23 @@
   font-weight: 600;
   cursor: pointer;
 }
+
+.content {
+  font-size: 25px;
+  color: white;
+  padding: 5px;
+  list-style: none;
+  margin-left: -80px;
+}
+
+.dlt-btn {
+  width: 80px;
+  height: 30px;
+  border: 2px solid blue;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}

@@ -9,7 +9,7 @@ function TaskList({
   return (
     <>
       {header}
-      <ul>{children}</ul>
+      <ul className="content">{children}</ul>
     </>
   );
 }

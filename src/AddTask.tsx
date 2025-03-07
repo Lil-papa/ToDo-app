@@ -20,7 +20,6 @@ function AddTask({ onAddTask }: addTaskProps) {
 
   return (
     <form onSubmit={handleAddTask}>
-      {/* <label  htmlFor="task-input">Add Task: </label> */}
       <input
         className="input"
         value={taskName}
